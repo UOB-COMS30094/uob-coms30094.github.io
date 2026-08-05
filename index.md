@@ -9,27 +9,24 @@ Labs: [W1]() | [W2]() | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
 
 # Welcome to Intelligent Agents (COMS30094)
 
-#### Announcement
+<!-- #### Announcement -->
 
-- <span style="color:blue">dd Mon yyyy.</span> Sample announcement
+<!-- - <span style="color:blue">dd Mon yyyy.</span> Sample announcement -->
 
-This unit runs for Year 3 undergraduates on the CS single honours and joint honours degree programmes. About 80 students in total.
+This unit introduces the principles and practice of intelligent agents and multiagent systems. 
+It examines how autonomous agents perceive, reason, communicate, coordinate, learn, and make decisions in environments containing other agents. 
+Topics include agent architectures, communication protocols, coordination, organisations and norms, game theory, reinforcement learning, social choice, auctions, and resource allocation. 
+The unit also introduces modern LLM-based agents, human-agent interaction, and the evaluation and governance of agentic systems. 
+Practical labs give students experience of designing, implementing, and evaluating agents in a range of settings.
+The unit provides both the classical foundations of multiagent systems and an introduction to recent developments in agentic AI.
 
-It is designed as an introduction to a ...
-
-We will cover topics such as: ...
-
-We are excited to be bringing you a unit with a wider range of topics and ideas. We hope you find it a really interesting unit!
-
-Please read through all the information on this page.
-
-- Nirav Ajmeri, Mengyan Zhang, and the TA team.
-
+<!-- 
 ### Table of Contents
 - [Unit Schedule](#schedule)
 - [Important Dates](#important-dates)
 - [Unit Structure and Coursework Details](#navigating-the-course)
 - [Unit Contacts](#unit-contacts)
+-->
 
 ## Schedule 
 
@@ -70,14 +67,6 @@ The labs are not assessed. They are designed to help you learn relevant ideas an
 This page includes a link on the top to the unit's Blackboard Discussion Forum. Please ask questions; discuss answers to questions; ask for clarification; point out broken links; discuss the content of lectures; offer encouragement to your classmates; etc. 
 
 **Note.** You need to be signed into Blackboard for the direct link to work. If you are not signed in to Blackboard, the link takes you to the login page. 
-
-#### Coursework
-
-#### Assessment
-
-Further details and FAQs: [*Assessment Information*](assessment-information) 
-
-All unit activities are planned to be delivered in-person. We will strive to conduct all activities (e.g., Lectures and Labs) face-to-face on campus, but given that staff and students may fall ill or may be shielding, we may need to switch to a hybrid mode.
 
 ## Unit Contacts
 
