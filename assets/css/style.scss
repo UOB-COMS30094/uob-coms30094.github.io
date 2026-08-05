@@ -1,30 +1,248 @@
 ---
+
 ---
 
 @import "{{ site.theme }}";
 
-/* Remove header + footer */
+/* ----------------------------------------------------------
+Compact layout overrides for jekyll-theme-dinky
+---------------------------------------------------------- */
+
+:root {
+--page-max-width: 1360px;
+--page-padding-x: 24px;
+--page-padding-y: 18px;
+--text-size: 14px;
+--text-line-height: 1.45;
+--space-block: 0.75rem;
+--border-colour: #d7d7d2;
+--table-stripe: #f3f2ee;
+}
+
+/* Use predictable widths when padding and borders are added. */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Remove Dinky's fixed sidebar and footer. */
 header,
 footer {
-  display: none !important;
+display: none !important;
 }
 
-/* Make the layout full-width */
-.wrapper {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-/* Make the main content take the full available width and center it */
-section {
-  float: none !important;
-  width: auto !important;         /* stop fixed 650px */
-  max-width: 1100px;              /* readable width; set to none for truly full */
-  margin: 0 auto !important;
-  /*padding: 2rem !important;*/
-}
-
-/* Remove Dinky's weird right padding that assumed a fixed sidebar */
+/* Remove the space reserved for Dinky's sidebar. */
+html,
 body {
-  padding: 0 !important;
+margin: 0;
+padding: 0 !important;
 }
+
+body {
+font-size: var(--text-size);
+line-height: var(--text-line-height);
+}
+
+/* Full-width outer layout with a centred, readable content area. */
+.wrapper {
+width: 100% !important;
+max-width: none !important;
+margin: 0 !important;
+}
+
+section {
+float: none !important;
+width: 100% !important;
+max-width: var(--page-max-width);
+margin: 0 auto !important;
+padding: var(--page-padding-y) var(--page-padding-x) 36px !important;
+}
+
+/* Compact the navigation paragraph at the top of each unit page. */
+section > p:first-child {
+margin: calc(-1 * var(--page-padding-y))
+calc(-1 * var(--page-padding-x))
+1rem;
+padding: 0.55rem var(--page-padding-x);
+line-height: 1.65;
+background: #f0efea;
+border-bottom: 1px solid var(--border-colour);
+}
+
+section > p:first-child a {
+white-space: nowrap;
+}
+
+/* Reduce the large vertical gaps inherited from Dinky. */
+p,
+ul,
+ol,
+dl,
+table,
+pre,
+blockquote {
+margin-top: 0;
+margin-bottom: var(--space-block);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1.35rem;
+margin-bottom: 0.4rem;
+line-height: 1.2;
+}
+
+section > h1:first-of-type {
+margin-top: 0.9rem;
+}
+
+h1 {
+font-size: 28px;
+}
+
+h2 {
+font-size: 21px;
+}
+
+h3 {
+font-size: 17px;
+}
+
+h4,
+h5,
+h6 {
+font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+padding-bottom: 3px;
+}
+
+/* Tighter lists with markers aligned outside the text. */
+ul,
+ol {
+padding-left: 1.35rem;
+list-style-position: outside;
+}
+
+li {
+margin: 0.12rem 0;
+}
+
+li > ul,
+li > ol {
+margin-top: 0.2rem;
+margin-bottom: 0.2rem;
+}
+
+/* Compact separators and code blocks. */
+hr {
+margin: 1rem 0;
+}
+
+pre {
+padding: 7px 10px;
+line-height: 1.35;
+}
+
+/* Denser and clearer tables, especially the six-column schedule. */
+table {
+width: 100%;
+margin: 0.65rem 0 1rem;
+border-collapse: collapse;
+border-spacing: 0;
+font-size: 12.5px;
+line-height: 1.28;
+}
+
+th,
+td {
+padding: 6px 7px;
+vertical-align: top;
+border: 1px solid var(--border-colour);
+overflow-wrap: anywhere;
+}
+
+th {
+font-family: inherit;
+font-size: 12.5px;
+font-weight: 700;
+background: #232323;
+}
+
+td {
+background: #fbfaf7;
+}
+
+tbody tr:nth-child(even) td {
+background: var(--table-stripe);
+}
+
+/* Keep media inside the available content width. */
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* On narrow screens, let wide schedules scroll instead of crushing columns. */
+@media screen and (max-width: 800px) {
+:root {
+--page-padding-x: 14px;
+--page-padding-y: 12px;
+--text-size: 13.5px;
+}
+
+section {
+overflow-x: auto;
+padding-bottom: 24px !important;
+}
+
+h1 {
+font-size: 24px;
+}
+
+h2 {
+font-size: 19px;
+}
+
+table {
+min-width: 760px;
+font-size: 12px;
+}
+
+th,
+td {
+padding: 5px 6px;
+}
+}
+
+/* Preserve a clean print layout. */
+@media print {
+body {
+font-size: 10.5pt;
+line-height: 1.35;
+}
+
+section {
+max-width: none;
+padding: 0 !important;
+}
+
+section > p:first-child {
+margin: 0 0 0.75rem;
+padding: 0 0 0.5rem;
+background: none;
+}
+
+table {
+font-size: 8.5pt;
+}
+}
+

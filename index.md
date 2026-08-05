@@ -31,8 +31,6 @@ Please read through all the information on this page and skim through the [refre
 - [Unit Structure and Coursework Details](#navigating-the-course)
 - [Unit Contacts](#unit-contacts)
 
----
-
 ## Schedule 
 
 | Week | Topic | Lecturers | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 1<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
