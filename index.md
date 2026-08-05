@@ -33,7 +33,7 @@ Please read through all the information on this page and skim through the [refre
 
 ## Schedule 
 
-| Week | Topic | Lecturers | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 1<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
+| Week | Topic | Lecturer | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 1<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
 |----------------|-------|-----------|-------------------------------------------|-------------------------------------|
 | 1 (w/c 21-Sep-2026) | Introduction and Single Agent Foundation | NA MZ | Welcome and Intro to Intelligent Agents | Single Agent Architecture | Gridworld Agent |
 | 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | Agent communication languages | Interaction protocols, commitments, and trust | Message-passing agents | 

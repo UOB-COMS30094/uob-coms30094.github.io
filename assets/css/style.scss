@@ -1,361 +1,396 @@
 ---
-
 ---
 
 @import "{{ site.theme }}";
 
 /* ----------------------------------------------------------
-Compact layout overrides for jekyll-theme-dinky
----------------------------------------------------------- */
+   Simple Bristol-inspired styling
+   White background, black text, red accents
+   ---------------------------------------------------------- */
 
 :root {
---page-max-width: 1360px;
---page-padding-x: 24px;
---page-padding-y: 18px;
---text-size: 14px;
---text-line-height: 1.45;
---space-block: 0.75rem;
---border-colour: #d7d7d2;
---table-stripe: #f3f2ee;
+  --bristol-red: #b01c2e;
+  --bristol-red-dark: #861522;
+
+  --black: #171717;
+  --text-colour: #2b2b2b;
+  --muted-text: #666666;
+
+  --white: #ffffff;
+  --light-grey: #f5f5f5;
+  --border-colour: #d7d7d7;
+
+  --page-max-width: 1250px;
+  --page-padding-x: 28px;
+  --page-padding-y: 24px;
 }
 
-/* Use predictable widths when padding and borders are added. */
+/* Predictable widths */
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Remove Dinky's fixed sidebar and footer. */
+/* Remove Dinky header and footer */
 header,
 footer {
-display: none !important;
+  display: none !important;
 }
 
-/* Remove the space reserved for Dinky's sidebar. */
+/* Plain white page */
 html,
 body {
-margin: 0;
-padding: 0 !important;
+  margin: 0;
+  padding: 0 !important;
+
+  color: var(--text-colour);
+  background: var(--white) !important;
+  background-image: none !important;
 }
 
 body {
-font-size: var(--text-size);
-line-height: var(--text-line-height);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-shadow: none;
 }
 
-/* Full-width outer layout with a centred, readable content area. */
+/* Main page layout */
 .wrapper {
-width: 100% !important;
-max-width: none !important;
-margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  background: var(--white);
 }
 
 section {
-float: none !important;
-width: 100% !important;
-max-width: var(--page-max-width);
-margin: 0 auto !important;
-padding: var(--page-padding-y) var(--page-padding-x) 36px !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: var(--page-max-width);
+  margin: 0 auto !important;
+  padding: var(--page-padding-y) var(--page-padding-x) 48px !important;
+  background: var(--white);
 }
 
-/* Compact the navigation paragraph at the top of each unit page. */
+/* ----------------------------------------------------------
+   Top navigation
+   ---------------------------------------------------------- */
+
 section > p:first-child {
-margin: calc(-1 * var(--page-padding-y))
-calc(-1 * var(--page-padding-x))
-1rem;
-padding: 0.55rem var(--page-padding-x);
-line-height: 1.65;
-background: #f0efea;
-border-bottom: 1px solid var(--border-colour);
+  margin:
+    calc(-1 * var(--page-padding-y))
+    calc(-1 * var(--page-padding-x))
+    26px;
+
+  padding: 11px var(--page-padding-x);
+
+  color: var(--white);
+  background: var(--black);
+  border-top: 5px solid var(--bristol-red);
+
+  line-height: 1.8;
 }
 
 section > p:first-child a {
-white-space: nowrap;
+  display: inline-block;
+  margin-right: 16px;
+
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-/* Reduce the large vertical gaps inherited from Dinky. */
+section > p:first-child a:hover,
+section > p:first-child a:focus {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--bristol-red);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+/* ----------------------------------------------------------
+   Headings
+   ---------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-shadow: none;
+}
+
+h1 {
+  margin: 0 0 22px;
+  padding-bottom: 11px;
+
+  font-size: 32px;
+  border-bottom: 5px solid var(--bristol-red);
+}
+
+h2 {
+  margin: 30px 0 12px;
+  padding-bottom: 7px;
+
+  font-size: 23px;
+  border-bottom: 1px solid var(--border-colour);
+}
+
+h3 {
+  margin: 24px 0 9px;
+  font-size: 18px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 20px 0 8px;
+  font-size: 15px;
+}
+
+/* ----------------------------------------------------------
+   General spacing
+   ---------------------------------------------------------- */
+
 p,
 ul,
 ol,
 dl,
-table,
+blockquote,
 pre,
-blockquote {
-margin-top: 0;
-margin-bottom: var(--space-block);
+table {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-margin-top: 1.35rem;
-margin-bottom: 0.4rem;
-line-height: 1.2;
-}
-
-section > h1:first-of-type {
-margin-top: 0.9rem;
-}
-
-h1 {
-font-size: 28px;
-}
-
-h2 {
-font-size: 21px;
-}
-
-h3 {
-font-size: 17px;
-}
-
-h4,
-h5,
-h6 {
-font-size: 14px;
-}
-
-h1,
-h2,
-h3 {
-padding-bottom: 3px;
-}
-
-/* Tighter lists with markers aligned outside the text. */
-ul,
-ol {
-padding-left: 1.35rem;
-list-style-position: outside;
-}
-
-li {
-margin: 0.12rem 0;
-}
-
-li > ul,
-li > ol {
-margin-top: 0.2rem;
-margin-bottom: 0.2rem;
-}
-
-/* Compact separators and code blocks. */
 hr {
-margin: 1rem 0;
-}
+  height: 1px;
+  margin: 28px 0;
 
-pre {
-padding: 7px 10px;
-line-height: 1.35;
-}
-
-/* Denser and clearer tables, especially the six-column schedule. */
-table {
-width: 100%;
-margin: 0.65rem 0 1rem;
-border-collapse: collapse;
-border-spacing: 0;
-font-size: 12.5px;
-line-height: 1.28;
-}
-
-th,
-td {
-padding: 6px 7px;
-vertical-align: top;
-border: 1px solid var(--border-colour);
-overflow-wrap: anywhere;
-}
-
-th {
-font-family: inherit;
-font-size: 12.5px;
-font-weight: 700;
-background: #232323;
-}
-
-td {
-background: #fbfaf7;
-}
-
-tbody tr:nth-child(even) td {
-background: var(--table-stripe);
-}
-
-/* Keep media inside the available content width. */
-img {
-max-width: 100%;
-height: auto;
-}
-
-/* On narrow screens, let wide schedules scroll instead of crushing columns. */
-@media screen and (max-width: 800px) {
-:root {
---page-padding-x: 14px;
---page-padding-y: 12px;
---text-size: 13.5px;
-}
-
-section {
-overflow-x: auto;
-padding-bottom: 24px !important;
-}
-
-h1 {
-font-size: 24px;
-}
-
-h2 {
-font-size: 19px;
-}
-
-table {
-min-width: 760px;
-font-size: 12px;
-}
-
-th,
-td {
-padding: 5px 6px;
-}
-}
-
-/* Preserve a clean print layout. */
-@media print {
-body {
-font-size: 10.5pt;
-line-height: 1.35;
-}
-
-section {
-max-width: none;
-padding: 0 !important;
-}
-
-section > p:first-child {
-margin: 0 0 0.75rem;
-padding: 0 0 0.5rem;
-background: none;
-}
-
-table {
-font-size: 8.5pt;
-}
+  background: var(--border-colour);
+  border: 0;
 }
 
 /* ----------------------------------------------------------
-   Cleaner colour palette
+   Links
    ---------------------------------------------------------- */
 
-:root {
-  --page-background: #ffffff;
-  --text-colour: #263238;
-  --muted-text: #607080;
-  --accent-colour: #2563a6;
-  --accent-hover: #173f73;
-  --heading-colour: #1f3448;
-
-  --border-colour: #dce3e8;
-  --navigation-background: #f4f7fa;
-  --table-header: #314b63;
-  --table-row: #ffffff;
-  --table-stripe: #f6f8fa;
-  --code-background: #f5f7f9;
-}
-
-/* Override Dinky's textured page background. */
-html,
-body {
-  background: var(--page-background) !important;
-  background-image: none !important;
-  color: var(--text-colour);
-}
-
-/* Ensure the main page remains white. */
-.wrapper,
-section {
-  background: var(--page-background);
-}
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-colour);
-}
-
-h1,
-h2,
-h3 {
-  border-bottom-color: var(--border-colour);
-}
-
-/* Links */
 a {
-  color: var(--accent-colour);
-  text-decoration-color: rgba(37, 99, 166, 0.35);
+  color: var(--bristol-red);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 a:hover,
 a:focus {
-  color: var(--accent-hover);
-  text-decoration-color: currentColor;
+  color: var(--bristol-red-dark);
+  text-decoration-thickness: 2px;
 }
 
-/* Top navigation */
-section > p:first-child {
-  background: var(--navigation-background);
-  border-bottom-color: var(--border-colour);
+/* ----------------------------------------------------------
+   Lists
+   ---------------------------------------------------------- */
+
+ul,
+ol {
+  padding-left: 24px;
+  list-style-position: outside;
 }
 
-/* Tables */
+li {
+  margin: 4px 0;
+}
+
+li::marker {
+  color: var(--bristol-red);
+}
+
+li > ul,
+li > ol {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------------
+   Tables
+   ---------------------------------------------------------- */
+
 table {
-  border-color: var(--border-colour);
+  width: 100%;
+  margin: 18px 0 24px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 4px solid var(--bristol-red);
+
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 th,
 td {
-  border-color: var(--border-colour);
+  padding: 8px 9px;
+  vertical-align: top;
+
+  border: 1px solid var(--border-colour);
+  overflow-wrap: anywhere;
 }
 
 th {
-  color: #ffffff;
-  background: var(--table-header);
+  color: var(--white);
+  background: var(--black);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
 }
 
 td {
-  background: var(--table-row);
+  color: var(--text-colour);
+  background: var(--white);
 }
 
 tbody tr:nth-child(even) td {
-  background: var(--table-stripe);
+  background: var(--light-grey);
 }
 
-tbody tr:hover td {
-  background: #eef4f8;
-}
+/* ----------------------------------------------------------
+   Code
+   ---------------------------------------------------------- */
 
-/* Code and quotations */
 code {
-  color: #334155;
-  background: var(--code-background);
+  padding: 2px 4px;
+
+  color: var(--black);
+  background: var(--light-grey);
+  border-radius: 0;
 }
 
 pre {
-  background: var(--code-background);
-  border-color: var(--border-colour);
+  padding: 12px 14px;
+  overflow-x: auto;
+
+  background: var(--light-grey);
+  border: 1px solid var(--border-colour);
+  border-left: 4px solid var(--bristol-red);
+  border-radius: 0;
+
+  line-height: 1.45;
 }
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+/* ----------------------------------------------------------
+   Quotes
+   ---------------------------------------------------------- */
 
 blockquote {
+  margin-left: 0;
+  padding: 10px 16px;
+
   color: var(--muted-text);
-  border-left-color: #9fb3c5;
-  background: #f8fafc;
+  background: var(--light-grey);
+  border-left: 4px solid var(--bristol-red);
 }
 
+/* Keep images inside the content area */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------------------------
+   Mobile
+   ---------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  :root {
+    --page-padding-x: 15px;
+    --page-padding-y: 16px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding-bottom: 30px !important;
+    overflow-x: auto;
+  }
+
+  section > p:first-child {
+    margin-bottom: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    margin-top: 26px;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  table {
+    min-width: 760px;
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 7px;
+  }
+}
+
+/* ----------------------------------------------------------
+   Print
+   ---------------------------------------------------------- */
+
+@media print {
+  body {
+    color: #000000;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  section {
+    max-width: none;
+    padding: 0 !important;
+  }
+
+  section > p:first-child {
+    display: none;
+  }
+
+  h1 {
+    border-bottom-width: 3px;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  table {
+    font-size: 8.5pt;
+  }
+}
