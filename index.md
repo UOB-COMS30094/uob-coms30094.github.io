@@ -21,7 +21,7 @@ We will cover topics such as: ...
 
 We are excited to be bringing you a unit with a wider range of topics and ideas than before and we hope you find it a really interesting unit!
 
-Please read through all the information on this page and skim through the [refresher](refresher)!
+Please read through all the information on this page.
 
 - Nirav Ajmeri, Mengyan Zhang, and the TA team.
 
