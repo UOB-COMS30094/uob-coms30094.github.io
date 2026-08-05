@@ -3,18 +3,15 @@ layout: default
 title: Home
 ---
 
-[Home](index) \| [Assessment Information](assessment-information) \| [Blackboard Page]() \| [Blackboard Forum]() \| [Unit Catalogue](https://upc.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
+[Home](index) \| [Assessment Information](assessment-information) \| [Blackboard Page]() \| [Blackboard Forum]() \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
 <br/>
 Labs: [W1]() | [W2]() | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
 
----
 # Welcome to Intelligent Agents (COMS30094)
 
 #### Announcement
 
 - <span style="color:blue">dd Mon yyyy.</span> Sample announcement
-
----
 
 This unit runs for Year 3 undergraduates on the CS single honours and joint honours degree programmes. About 80 students in total.
 
