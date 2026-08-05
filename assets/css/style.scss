@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Remove header + footer */
+header,
+footer {
+  display: none !important;
+}
+
+/* Make the layout full-width */
+.wrapper {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Make the main content take the full available width and center it */
+section {
+  float: none !important;
+  width: auto !important;         /* stop fixed 650px */
+  max-width: 1100px;              /* readable width; set to none for truly full */
+  margin: 0 auto !important;
+  padding: 2rem !important;
+}
+
+/* Remove Dinky's weird right padding that assumed a fixed sidebar */
+body {
+  padding: 0 !important;
+}
