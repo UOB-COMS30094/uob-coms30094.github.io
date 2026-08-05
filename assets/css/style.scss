@@ -246,3 +246,116 @@ font-size: 8.5pt;
 }
 }
 
+/* ----------------------------------------------------------
+   Cleaner colour palette
+   ---------------------------------------------------------- */
+
+:root {
+  --page-background: #ffffff;
+  --text-colour: #263238;
+  --muted-text: #607080;
+  --accent-colour: #2563a6;
+  --accent-hover: #173f73;
+  --heading-colour: #1f3448;
+
+  --border-colour: #dce3e8;
+  --navigation-background: #f4f7fa;
+  --table-header: #314b63;
+  --table-row: #ffffff;
+  --table-stripe: #f6f8fa;
+  --code-background: #f5f7f9;
+}
+
+/* Override Dinky's textured page background. */
+html,
+body {
+  background: var(--page-background) !important;
+  background-image: none !important;
+  color: var(--text-colour);
+}
+
+/* Ensure the main page remains white. */
+.wrapper,
+section {
+  background: var(--page-background);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-colour);
+}
+
+h1,
+h2,
+h3 {
+  border-bottom-color: var(--border-colour);
+}
+
+/* Links */
+a {
+  color: var(--accent-colour);
+  text-decoration-color: rgba(37, 99, 166, 0.35);
+  text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-hover);
+  text-decoration-color: currentColor;
+}
+
+/* Top navigation */
+section > p:first-child {
+  background: var(--navigation-background);
+  border-bottom-color: var(--border-colour);
+}
+
+/* Tables */
+table {
+  border-color: var(--border-colour);
+}
+
+th,
+td {
+  border-color: var(--border-colour);
+}
+
+th {
+  color: #ffffff;
+  background: var(--table-header);
+}
+
+td {
+  background: var(--table-row);
+}
+
+tbody tr:nth-child(even) td {
+  background: var(--table-stripe);
+}
+
+tbody tr:hover td {
+  background: #eef4f8;
+}
+
+/* Code and quotations */
+code {
+  color: #334155;
+  background: var(--code-background);
+}
+
+pre {
+  background: var(--code-background);
+  border-color: var(--border-colour);
+}
+
+blockquote {
+  color: var(--muted-text);
+  border-left-color: #9fb3c5;
+  background: #f8fafc;
+}
+
