@@ -1,0 +1,136 @@
+---
+---
+
+/* Minimal unit-page styling */
+
+:root {
+  --red: #b01c2e;
+  --text: #222222;
+  --muted: #666666;
+  --border: #dddddd;
+  --light-grey: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 28px 40px;
+
+  color: var(--text);
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Links */
+
+a {
+  color: var(--red);
+}
+
+a:hover,
+a:focus {
+  color: #7f1420;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+  line-height: 1.25;
+}
+
+h1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--red);
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* Content spacing */
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  margin: 14px 0 20px;
+  border-collapse: collapse;
+
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+th,
+td {
+  padding: 7px 8px;
+  vertical-align: top;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+th {
+  font-weight: 700;
+  background: #eeeeee;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--light-grey);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

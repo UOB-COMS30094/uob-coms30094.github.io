@@ -1,0 +1,411 @@
+---
+
+---
+
+@import "{{ site.theme }}";
+
+/* ----------------------------------------------------------
+Clean unit-page layout
+Moderately compact, white, simple and academic
+---------------------------------------------------------- */
+
+:root {
+--accent: #b01c2e;
+--accent-dark: #841521;
+
+--heading: #202020;
+--text: #3f3f3f;
+--muted: #686868;
+
+--background: #ffffff;
+--soft-background: #f7f7f7;
+--table-stripe: #fafafa;
+--border: #d8d8d8;
+
+--page-width: 1220px;
+--page-padding-x: 24px;
+--page-padding-y: 18px;
+}
+
+/* Consistent sizing */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Remove the fixed Dinky sidebar and footer */
+header,
+footer {
+display: none !important;
+}
+
+/* Remove Dinky's textured background and outer padding */
+html,
+body {
+margin: 0;
+padding: 0 !important;
+background: var(--background) !important;
+background-image: none !important;
+}
+
+body {
+color: var(--text);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14.5px;
+line-height: 1.5;
+text-shadow: none;
+}
+
+/* ----------------------------------------------------------
+Page layout
+---------------------------------------------------------- */
+
+.wrapper {
+width: 100% !important;
+max-width: none !important;
+margin: 0 !important;
+background: var(--background);
+}
+
+section {
+float: none !important;
+width: 100% !important;
+max-width: var(--page-width);
+margin: 0 auto !important;
+padding:
+var(--page-padding-y)
+var(--page-padding-x)
+38px !important;
+
+background: var(--background);
+}
+
+/* ----------------------------------------------------------
+Top navigation
+---------------------------------------------------------- */
+
+section > p:first-child {
+margin:
+calc(-1 * var(--page-padding-y))
+calc(-1 * var(--page-padding-x))
+20px;
+
+padding: 9px var(--page-padding-x);
+
+color: var(--text);
+background: var(--soft-background);
+border-top: 4px solid var(--accent);
+border-bottom: 1px solid var(--border);
+
+line-height: 1.6;
+}
+
+section > p:first-child a {
+display: inline-block;
+margin-right: 14px;
+
+color: var(--heading);
+font-weight: 600;
+text-decoration: none;
+white-space: nowrap;
+}
+
+section > p:first-child a:hover,
+section > p:first-child a:focus {
+color: var(--accent);
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 3px;
+}
+
+/* ----------------------------------------------------------
+Headings
+---------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: var(--heading);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+line-height: 1.25;
+text-shadow: none;
+}
+
+h1 {
+margin: 0 0 17px;
+padding-bottom: 9px;
+
+font-size: 29px;
+border-bottom: 2px solid var(--accent);
+}
+
+h2 {
+margin: 24px 0 9px;
+padding-left: 9px;
+
+font-size: 21px;
+border-left: 3px solid var(--accent);
+}
+
+h3 {
+margin: 19px 0 7px;
+font-size: 17px;
+}
+
+h4,
+h5,
+h6 {
+margin: 15px 0 6px;
+font-size: 14.5px;
+}
+
+/* ----------------------------------------------------------
+General content spacing
+---------------------------------------------------------- */
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+table {
+margin-top: 0;
+margin-bottom: 12px;
+}
+
+hr {
+height: 1px;
+margin: 20px 0;
+background: var(--border);
+border: 0;
+}
+
+/* ----------------------------------------------------------
+Links
+---------------------------------------------------------- */
+
+a {
+color: var(--accent);
+/* font-weight: 600; */
+text-decoration: underline;
+text-decoration-thickness: 1px;
+text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+color: var(--accent-dark);
+text-decoration-thickness: 2px;
+}
+
+/* ----------------------------------------------------------
+Lists
+---------------------------------------------------------- */
+
+ul,
+ol {
+padding-left: 22px;
+list-style-position: outside;
+}
+
+li {
+margin: 3px 0;
+}
+
+li::marker {
+color: var(--accent);
+}
+
+li > ul,
+li > ol {
+margin-top: 3px;
+margin-bottom: 3px;
+}
+
+/* ----------------------------------------------------------
+Tables
+---------------------------------------------------------- */
+
+table {
+width: 100%;
+margin: 13px 0 19px;
+
+border-collapse: collapse;
+border-spacing: 0;
+border-top: 3px solid var(--accent);
+
+/* font-size: 13px; */
+line-height: 1.35;
+}
+
+th,
+td {
+padding: 7px 8px;
+vertical-align: top;
+
+border: 1px solid var(--border);
+overflow-wrap: anywhere;
+}
+
+th {
+color: var(--heading);
+background: #eeeeee;
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+font-weight: 700;
+text-align: left;
+}
+
+td {
+color: var(--text);
+background: var(--background);
+}
+
+tbody tr:nth-child(even) td {
+background: var(--table-stripe);
+}
+
+tbody tr:hover td {
+background: #f5f5f5;
+}
+
+/* ----------------------------------------------------------
+Code
+---------------------------------------------------------- */
+
+code {
+padding: 1px 4px;
+color: var(--heading);
+background: var(--soft-background);
+border: 1px solid #e8e8e8;
+border-radius: 2px;
+}
+
+pre {
+padding: 10px 12px;
+overflow-x: auto;
+
+background: var(--soft-background);
+border: 1px solid var(--border);
+border-left: 3px solid var(--accent);
+border-radius: 0;
+
+line-height: 1.4;
+}
+
+pre code {
+padding: 0;
+background: transparent;
+border: 0;
+}
+
+/* ----------------------------------------------------------
+Blockquotes
+---------------------------------------------------------- */
+
+blockquote {
+margin-left: 0;
+padding: 8px 13px;
+
+color: var(--muted);
+background: var(--soft-background);
+border-left: 3px solid var(--accent);
+}
+
+/* Keep images within the content area */
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* ----------------------------------------------------------
+Mobile layout
+---------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+:root {
+--page-padding-x: 14px;
+--page-padding-y: 13px;
+}
+
+body {
+font-size: 14px;
+}
+
+section {
+padding-bottom: 26px !important;
+overflow-x: auto;
+}
+
+section > p:first-child {
+margin-bottom: 16px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+h1 {
+font-size: 25px;
+}
+
+h2 {
+margin-top: 21px;
+font-size: 19px;
+}
+
+h3 {
+font-size: 16px;
+}
+
+table {
+min-width: 760px;
+font-size: 12px;
+}
+
+th,
+td {
+padding: 6px;
+}
+}
+
+/* ----------------------------------------------------------
+Print layout
+---------------------------------------------------------- */
+
+@media print {
+body {
+color: #000000;
+font-size: 10.5pt;
+line-height: 1.4;
+}
+
+section {
+max-width: none;
+padding: 0 !important;
+}
+
+section > p:first-child {
+display: none;
+}
+
+h1,
+h2,
+h3 {
+color: #000000;
+}
+
+a {
+color: #000000;
+}
+
+table {
+font-size: 8.5pt;
+}
+}
+
