@@ -19,7 +19,7 @@ It is designed as an introduction to a ...
 
 We will cover topics such as: ...
 
-We are excited to be bringing you a unit with a wider range of topics and ideas than before and we hope you find it a really interesting unit!
+We are excited to be bringing you a unit with a wider range of topics and ideas. We hope you find it a really interesting unit!
 
 Please read through all the information on this page.
 
@@ -33,7 +33,7 @@ Please read through all the information on this page.
 
 ## Schedule 
 
-| Week | Topic | Lecturer | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 1<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
+| Week | Topic | Lecturer | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 2<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
 |----------------|-------|-----------|-------------------------------------------|-------------------------------------|
 | 1 (w/c 21-Sep-2026) | Introduction and Single Agent Foundation | NA MZ | Welcome and Intro to Intelligent Agents | Single Agent Architecture | Gridworld Agent |
 | 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | Agent communication languages | Interaction protocols, commitments, and trust | Message-passing agents | 

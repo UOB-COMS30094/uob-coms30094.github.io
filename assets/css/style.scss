@@ -1,119 +1,127 @@
 ---
+
 ---
 
 @import "{{ site.theme }}";
 
 /* ----------------------------------------------------------
-   Simple Bristol-inspired styling
-   White background, black text, red accents
-   ---------------------------------------------------------- */
+Clean unit-page layout
+Moderately compact, white, simple and academic
+---------------------------------------------------------- */
 
 :root {
-  --bristol-red: #b01c2e;
-  --bristol-red-dark: #861522;
+--accent: #b01c2e;
+--accent-dark: #841521;
 
-  --black: #171717;
-  --text-colour: #2b2b2b;
-  --muted-text: #666666;
+--heading: #202020;
+--text: #3f3f3f;
+--muted: #686868;
 
-  --white: #ffffff;
-  --light-grey: #f5f5f5;
-  --border-colour: #d7d7d7;
+--background: #ffffff;
+--soft-background: #f7f7f7;
+--table-stripe: #fafafa;
+--border: #d8d8d8;
 
-  --page-max-width: 1250px;
-  --page-padding-x: 28px;
-  --page-padding-y: 24px;
+--page-width: 1220px;
+--page-padding-x: 24px;
+--page-padding-y: 18px;
 }
 
-/* Predictable widths */
+/* Consistent sizing */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
-/* Remove Dinky header and footer */
+/* Remove the fixed Dinky sidebar and footer */
 header,
 footer {
-  display: none !important;
+display: none !important;
 }
 
-/* Plain white page */
+/* Remove Dinky's textured background and outer padding */
 html,
 body {
-  margin: 0;
-  padding: 0 !important;
-
-  color: var(--text-colour);
-  background: var(--white) !important;
-  background-image: none !important;
+margin: 0;
+padding: 0 !important;
+background: var(--background) !important;
+background-image: none !important;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  text-shadow: none;
-}
-
-/* Main page layout */
-.wrapper {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  background: var(--white);
-}
-
-section {
-  float: none !important;
-  width: 100% !important;
-  max-width: var(--page-max-width);
-  margin: 0 auto !important;
-  padding: var(--page-padding-y) var(--page-padding-x) 48px !important;
-  background: var(--white);
+color: var(--text);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14.5px;
+line-height: 1.5;
+text-shadow: none;
 }
 
 /* ----------------------------------------------------------
-   Top navigation
-   ---------------------------------------------------------- */
+Page layout
+---------------------------------------------------------- */
+
+.wrapper {
+width: 100% !important;
+max-width: none !important;
+margin: 0 !important;
+background: var(--background);
+}
+
+section {
+float: none !important;
+width: 100% !important;
+max-width: var(--page-width);
+margin: 0 auto !important;
+padding:
+var(--page-padding-y)
+var(--page-padding-x)
+38px !important;
+
+background: var(--background);
+}
+
+/* ----------------------------------------------------------
+Top navigation
+---------------------------------------------------------- */
 
 section > p:first-child {
-  margin:
-    calc(-1 * var(--page-padding-y))
-    calc(-1 * var(--page-padding-x))
-    26px;
+margin:
+calc(-1 * var(--page-padding-y))
+calc(-1 * var(--page-padding-x))
+20px;
 
-  padding: 11px var(--page-padding-x);
+padding: 9px var(--page-padding-x);
 
-  color: var(--white);
-  background: var(--black);
-  border-top: 5px solid var(--bristol-red);
+color: var(--text);
+background: var(--soft-background);
+border-top: 4px solid var(--accent);
+border-bottom: 1px solid var(--border);
 
-  line-height: 1.8;
+line-height: 1.6;
 }
 
 section > p:first-child a {
-  display: inline-block;
-  margin-right: 16px;
+display: inline-block;
+margin-right: 14px;
 
-  color: var(--white);
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
+color: var(--heading);
+font-weight: 600;
+text-decoration: none;
+white-space: nowrap;
 }
 
 section > p:first-child a:hover,
 section > p:first-child a:focus {
-  color: var(--white);
-  text-decoration: underline;
-  text-decoration-color: var(--bristol-red);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+color: var(--accent);
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 3px;
 }
 
 /* ----------------------------------------------------------
-   Headings
-   ---------------------------------------------------------- */
+Headings
+---------------------------------------------------------- */
 
 h1,
 h2,
@@ -121,44 +129,44 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  line-height: 1.25;
-  text-shadow: none;
+color: var(--heading);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+line-height: 1.25;
+text-shadow: none;
 }
 
 h1 {
-  margin: 0 0 22px;
-  padding-bottom: 11px;
+margin: 0 0 17px;
+padding-bottom: 9px;
 
-  font-size: 32px;
-  border-bottom: 5px solid var(--bristol-red);
+font-size: 29px;
+border-bottom: 2px solid var(--accent);
 }
 
 h2 {
-  margin: 30px 0 12px;
-  padding-bottom: 7px;
+margin: 24px 0 9px;
+padding-left: 9px;
 
-  font-size: 23px;
-  border-bottom: 1px solid var(--border-colour);
+font-size: 21px;
+border-left: 3px solid var(--accent);
 }
 
 h3 {
-  margin: 24px 0 9px;
-  font-size: 18px;
+margin: 19px 0 7px;
+font-size: 17px;
 }
 
 h4,
 h5,
 h6 {
-  margin: 20px 0 8px;
-  font-size: 15px;
+margin: 15px 0 6px;
+font-size: 14.5px;
 }
 
 /* ----------------------------------------------------------
-   General spacing
-   ---------------------------------------------------------- */
+General content spacing
+---------------------------------------------------------- */
 
 p,
 ul,
@@ -167,230 +175,237 @@ dl,
 blockquote,
 pre,
 table {
-  margin-top: 0;
-  margin-bottom: 16px;
+margin-top: 0;
+margin-bottom: 12px;
 }
 
 hr {
-  height: 1px;
-  margin: 28px 0;
-
-  background: var(--border-colour);
-  border: 0;
+height: 1px;
+margin: 20px 0;
+background: var(--border);
+border: 0;
 }
 
 /* ----------------------------------------------------------
-   Links
-   ---------------------------------------------------------- */
+Links
+---------------------------------------------------------- */
 
 a {
-  color: var(--bristol-red);
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+color: var(--accent);
+font-weight: 600;
+text-decoration: underline;
+text-decoration-thickness: 1px;
+text-underline-offset: 2px;
 }
 
 a:hover,
 a:focus {
-  color: var(--bristol-red-dark);
-  text-decoration-thickness: 2px;
+color: var(--accent-dark);
+text-decoration-thickness: 2px;
 }
 
 /* ----------------------------------------------------------
-   Lists
-   ---------------------------------------------------------- */
+Lists
+---------------------------------------------------------- */
 
 ul,
 ol {
-  padding-left: 24px;
-  list-style-position: outside;
+padding-left: 22px;
+list-style-position: outside;
 }
 
 li {
-  margin: 4px 0;
+margin: 3px 0;
 }
 
 li::marker {
-  color: var(--bristol-red);
+color: var(--accent);
 }
 
 li > ul,
 li > ol {
-  margin-top: 5px;
-  margin-bottom: 5px;
+margin-top: 3px;
+margin-bottom: 3px;
 }
 
 /* ----------------------------------------------------------
-   Tables
-   ---------------------------------------------------------- */
+Tables
+---------------------------------------------------------- */
 
 table {
-  width: 100%;
-  margin: 18px 0 24px;
+width: 100%;
+margin: 13px 0 19px;
 
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-top: 4px solid var(--bristol-red);
+border-collapse: collapse;
+border-spacing: 0;
+border-top: 3px solid var(--accent);
 
-  font-size: 13px;
-  line-height: 1.4;
+font-size: 13px;
+line-height: 1.35;
 }
 
 th,
 td {
-  padding: 8px 9px;
-  vertical-align: top;
+padding: 7px 8px;
+vertical-align: top;
 
-  border: 1px solid var(--border-colour);
-  overflow-wrap: anywhere;
+border: 1px solid var(--border);
+overflow-wrap: anywhere;
 }
 
 th {
-  color: var(--white);
-  background: var(--black);
+color: var(--heading);
+background: #eeeeee;
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+font-weight: 700;
+text-align: left;
 }
 
 td {
-  color: var(--text-colour);
-  background: var(--white);
+color: var(--text);
+background: var(--background);
 }
 
 tbody tr:nth-child(even) td {
-  background: var(--light-grey);
+background: var(--table-stripe);
+}
+
+tbody tr:hover td {
+background: #f5f5f5;
 }
 
 /* ----------------------------------------------------------
-   Code
-   ---------------------------------------------------------- */
+Code
+---------------------------------------------------------- */
 
 code {
-  padding: 2px 4px;
-
-  color: var(--black);
-  background: var(--light-grey);
-  border-radius: 0;
+padding: 1px 4px;
+color: var(--heading);
+background: var(--soft-background);
+border: 1px solid #e8e8e8;
+border-radius: 2px;
 }
 
 pre {
-  padding: 12px 14px;
-  overflow-x: auto;
+padding: 10px 12px;
+overflow-x: auto;
 
-  background: var(--light-grey);
-  border: 1px solid var(--border-colour);
-  border-left: 4px solid var(--bristol-red);
-  border-radius: 0;
+background: var(--soft-background);
+border: 1px solid var(--border);
+border-left: 3px solid var(--accent);
+border-radius: 0;
 
-  line-height: 1.45;
+line-height: 1.4;
 }
 
 pre code {
-  padding: 0;
-  background: transparent;
+padding: 0;
+background: transparent;
+border: 0;
 }
 
 /* ----------------------------------------------------------
-   Quotes
-   ---------------------------------------------------------- */
+Blockquotes
+---------------------------------------------------------- */
 
 blockquote {
-  margin-left: 0;
-  padding: 10px 16px;
+margin-left: 0;
+padding: 8px 13px;
 
-  color: var(--muted-text);
-  background: var(--light-grey);
-  border-left: 4px solid var(--bristol-red);
+color: var(--muted);
+background: var(--soft-background);
+border-left: 3px solid var(--accent);
 }
 
-/* Keep images inside the content area */
+/* Keep images within the content area */
 img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
 
 /* ----------------------------------------------------------
-   Mobile
-   ---------------------------------------------------------- */
+Mobile layout
+---------------------------------------------------------- */
 
 @media screen and (max-width: 800px) {
-  :root {
-    --page-padding-x: 15px;
-    --page-padding-y: 16px;
-  }
+:root {
+--page-padding-x: 14px;
+--page-padding-y: 13px;
+}
 
-  body {
-    font-size: 14px;
-  }
+body {
+font-size: 14px;
+}
 
-  section {
-    padding-bottom: 30px !important;
-    overflow-x: auto;
-  }
+section {
+padding-bottom: 26px !important;
+overflow-x: auto;
+}
 
-  section > p:first-child {
-    margin-bottom: 20px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
+section > p:first-child {
+margin-bottom: 16px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
 
-  h1 {
-    font-size: 27px;
-  }
+h1 {
+font-size: 25px;
+}
 
-  h2 {
-    margin-top: 26px;
-    font-size: 20px;
-  }
+h2 {
+margin-top: 21px;
+font-size: 19px;
+}
 
-  h3 {
-    font-size: 17px;
-  }
+h3 {
+font-size: 16px;
+}
 
-  table {
-    min-width: 760px;
-    font-size: 12px;
-  }
+table {
+min-width: 760px;
+font-size: 12px;
+}
 
-  th,
-  td {
-    padding: 7px;
-  }
+th,
+td {
+padding: 6px;
+}
 }
 
 /* ----------------------------------------------------------
-   Print
-   ---------------------------------------------------------- */
+Print layout
+---------------------------------------------------------- */
 
 @media print {
-  body {
-    color: #000000;
-    font-size: 10.5pt;
-    line-height: 1.45;
-  }
-
-  section {
-    max-width: none;
-    padding: 0 !important;
-  }
-
-  section > p:first-child {
-    display: none;
-  }
-
-  h1 {
-    border-bottom-width: 3px;
-  }
-
-  a {
-    color: #000000;
-  }
-
-  table {
-    font-size: 8.5pt;
-  }
+body {
+color: #000000;
+font-size: 10.5pt;
+line-height: 1.4;
 }
+
+section {
+max-width: none;
+padding: 0 !important;
+}
+
+section > p:first-child {
+display: none;
+}
+
+h1,
+h2,
+h3 {
+color: #000000;
+}
+
+a {
+color: #000000;
+}
+
+table {
+font-size: 8.5pt;
+}
+}
+
