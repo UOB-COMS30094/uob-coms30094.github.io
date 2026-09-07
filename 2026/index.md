@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-[Home](index) \| [Assessment Information](assessment-information) \| [Blackboard Page]() \| [Blackboard Forum]() \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
+[Home](index) \| [Blackboard Page]() \| [Blackboard Forum]() \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
 <br/>
 Labs: [W1]() | [W2]() | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
 
@@ -48,8 +48,9 @@ The unit provides both the classical foundations of multiagent systems and an in
 
 
 ### Important Dates: 
-- **Midterm exam**: hh xm on Day, dd-Mon-2026
-- **Coursework due**: hh xm on Day, dd-Mon-2026
+- **Midterm exam (COMS30097)**: hh xm on Day, dd-Mon-2026 (To be confirmed)
+- **Coursework due (COMS30097)** : 1 pm on Thursday, 03-Dec-2026
+- **Winter exam  (COMS30081)**:  hh xm on Day, dd-Mon-2026 (To be confirmed)
 
 ## Navigating the Course
 
