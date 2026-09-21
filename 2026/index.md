@@ -34,11 +34,11 @@ The unit provides both the classical foundations of multiagent systems and an in
 |----------------|-------|-----------|-------------------------------------------|-------------------------------------|
 | 1 (w/c 21-Sep-2026) | Introduction and Single Agent Foundation | NA MZ | Welcome and Intro to Intelligent Agents | Single Agent Architecture | Gridworld Agent |
 | 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | Agent communication languages | Interaction protocols, commitments, and trust | Message-passing agents | 
-| 3 (w/c 05-Oct-2026) | Coordnation, Organisation, and Norms | NA | Coordination and distributed task allocation | Organisation, institutions, and norms | Warehouse Coordination | 
+| 3 (w/c 05-Oct-2026) | Coordination, Organisation, and Norms | NA | Coordination and distributed task allocation | Organisation, institutions, and norms | Warehouse Coordination | 
 | 4 (w/c 12-Oct-2026) | Game theory and Strategic Interactions | MZ | Game theory: Normal-form games and equilibrium | Sequential and repeated interactions | Strategic interactions | 
 | 5 (w/c 19-Oct-2026) | Learning and Adaptation | MZ | Reinforcement learning | Multiagent reinforcement learning | MARL | 
 | 6 (w/c 26-Oct-2026) | Consolidation Week |  |  |  |  | 
-| 7 (w/c 02-Nov-2026) | Preferences, Social Choice, and Resource Allocation | NA MZ | Preference modelling and social choice | Allocation, auctions, and coaliations | Voting and auction mechanisms | 
+| 7 (w/c 02-Nov-2026) | Preferences, Social Choice, and Resource Allocation | NA MZ | Preference modelling and social choice | Allocation, auctions, and coalitions | Voting and auction mechanisms | 
 | 8 (w/c 09-Nov-2026) | Generative and Agentic AI, and Human-Agent Interaction | NA MZ | LLM agents and multiagent orchestration | Human-agent interaction, evaluation, and governance | Multi-LLM Agents | 
 | 9 (w/c 16-Nov-2026) | Coursework |  |  |  |  | 
 | 10 (w/c 23-Nov-2026) | Coursework |  |  |  |  | 
