@@ -114,6 +114,12 @@ Run the supplied test after completing the function.
 
 A successful implementation should produce a plotted route showing the agent moving from its starting location towards its goal.
 
+> **Hint**
+>
+> Check `agent.py` to see how the agent selects an action. Also look at the world implementation to see how an action is executed.
+>
+> You will need to use `agent.choose_action(world)`, `world.step(...)`, and `trail.append(...)`, in that order.
+
 #### Think about it
 
 The basic agent repeatedly follows the cycle:
@@ -240,6 +246,10 @@ Observe:
 * where litter is deposited;
 * how litter accumulates in cells; and
 * what happens when the blocking threshold is reached.
+
+> **Hint**
+> 
+> Set `did_drop` when an agent selects drop, otherwise return the agent's navigation action.
 
 #### Think about it
 
