@@ -34,6 +34,8 @@ By the end of the lab, you should be able to relate the behaviour you observe in
 
 ## Lab Files
 
+**[Download the Lab 1 starter files](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w1/lab1-initial.zip)
+
 The lab contains the following key files:
 
 * `Lab1.ipynb`
