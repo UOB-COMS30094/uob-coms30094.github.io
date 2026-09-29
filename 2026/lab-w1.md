@@ -353,11 +353,11 @@ Does it act towards goals such as:
 
 ##### BDI
 
-## Lab Solutions
-[Lab1 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w1/Lab1%20-%20SOLUTIONS.ipynb)
-
 Does the implementation explicitly contain:
 
 * beliefs;
 * desires; and
 * intentions?
+
+## Lab Solutions
+[Lab1 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w1/Lab1%20-%20SOLUTIONS.ipynb)
