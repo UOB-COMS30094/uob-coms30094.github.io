@@ -5,7 +5,7 @@ title: Home
 
 [Home](index) \| [Blackboard Page](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/outline) \| [Blackboard Forum](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/engagement) \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
 <br/>
-Labs: [W1](lab-w1) | [W2]() | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
+Labs: [W1](lab-w1) | [W2](lab-w2) | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
 
 # Welcome to Intelligent Agents (COMS30094)
 
@@ -33,7 +33,7 @@ The unit provides both the classical foundations of multiagent systems and an in
 | Week | Topic | Lecturer | Tuesday Lecture 1<br>(Queens 1.15 SLT; 10am–11am) | Tuesday Lecture 2<br>(Physics G12; 2pm–3pm) | Friday Lab<br>(Queens 1.80; 3pm–5pm) |
 |----------------|-------|-----------|-------------------------------------------|-------------------------------------|
 | 1 (w/c 21-Sep-2026) | Introduction and Single Agent Foundation | NA MZ | [Welcome and Intro to Intelligent Agents](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec1-handout.pdf) | [Single Agent Architecture](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec2-handout.pdf) | [Gridworld Agent](lab-w1) |
-| 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | [Sociotechnical systems and Norms](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec3-handout.pdf) | [Agent Communication, Trust, and Reputation](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec4-handout.pdf) | Message-passing agents | 
+| 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | [Sociotechnical systems and Norms](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec3-handout.pdf) | [Agent Communication, Trust, and Reputation](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec4-handout.pdf) | [Message-passing agents](lab-w2) | 
 | 3 (w/c 05-Oct-2026) | Coordination, Organisation, and Norms | NA | Coordination and distributed task allocation | Organisation, institutions, and norms | Warehouse Coordination | 
 | 4 (w/c 12-Oct-2026) | Game theory and Strategic Interactions | MZ | Game theory: Normal-form games and equilibrium | Sequential and repeated interactions | Strategic interactions | 
 | 5 (w/c 19-Oct-2026) | Learning and Adaptation | MZ | Reinforcement learning | Multiagent reinforcement learning | MARL | 
