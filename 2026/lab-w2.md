@@ -61,7 +61,7 @@ Useful controls:
 
 ## Lab Files
 
-[⬇ Download the Lab 2 starter files]()
+[⬇ Download the Lab 2 starter files](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w2/lab2-initial.zip)
 
 The main files are:
 
