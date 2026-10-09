@@ -45,7 +45,7 @@ Useful controls:
 
 ## Lab Files
 
-[Download the Lab 3 starter files](REPLACE_WITH_STARTER_URL)
+[Download the Lab 3 starter files](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w3/lab3-initial.zip)
 
 The main file is:
 
