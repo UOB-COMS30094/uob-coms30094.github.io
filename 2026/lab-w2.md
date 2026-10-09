@@ -304,4 +304,4 @@ With \(n\) agents, how many **directed** trust relationships are possible?
 
 ## Lab Solutions
 
-Lab 2 Solution (Will be made available!)
+[Lab 2 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w2/lab2-solution.zip)
