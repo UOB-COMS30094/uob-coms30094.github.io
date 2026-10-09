@@ -5,7 +5,7 @@ title: Home
 
 [Home](index) \| [Blackboard Page](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/outline) \| [Blackboard Forum](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/engagement) \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
 <br/>
-Labs: [W1](lab-w1) | [W2](lab-w2) | [W3]() | [W4]() | [W5]() | [W7]() | [W8]()
+Labs: [W1](lab-w1) | [W2](lab-w2) | [W3](lab-w3) | [W4]() | [W5]() | [W7]() | [W8]()
 
 # Welcome to Intelligent Agents (COMS30094)
 
@@ -34,7 +34,7 @@ The unit provides both the classical foundations of multiagent systems and an in
 |----------------|-------|-----------|-------------------------------------------|-------------------------------------|
 | 1 (w/c 21-Sep-2026) | Introduction and Single Agent Foundation | NA MZ | [Welcome and Intro to Intelligent Agents](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec1-handout.pdf) | [Single Agent Architecture](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec2-handout.pdf) | [Gridworld Agent](lab-w1) |
 | 2 (w/c 28-Sep-2026) | Communication, Interaction Protocols, and Reasoning | NA | [Sociotechnical Systems and Norms](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec3-handout.pdf) | [Agent Communication, Trust, and Reputation](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec4-handout.pdf) | [Message-passing agents](lab-w2) | 
-| 3 (w/c 05-Oct-2026) | Coordination, Organisation, and Norms | NA | [Coordination and Distributed Task Allocation](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec5-handout.pdf) | [Organisations for Coordination](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec6-handout.pdf) | Warehouse Coordination | 
+| 3 (w/c 05-Oct-2026) | Coordination, Organisation, and Norms | NA | [Coordination and Distributed Task Allocation](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec5-handout.pdf) | [Organisations for Coordination](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec6-handout.pdf) | [Search and Rescue Coordination](lab-w3) | 
 | 4 (w/c 12-Oct-2026) | Game theory and Strategic Interactions | MZ | Game theory: Normal-form games and equilibrium | Sequential and repeated interactions | Strategic interactions | 
 | 5 (w/c 19-Oct-2026) | Learning and Adaptation | MZ | Reinforcement learning | Multiagent reinforcement learning | MARL | 
 | 6 (w/c 26-Oct-2026) | Consolidation Week |  |  |  |  | 
