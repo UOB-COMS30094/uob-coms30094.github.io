@@ -48,7 +48,7 @@ The unit provides both the classical foundations of multiagent systems and an in
 
 
 ### Important Dates: 
-- **Midterm exam (COMS30097)**: hh xm on Day, dd-Mon-2026 (To be confirmed)
+- **Midterm exam (COMS30097)**: 10 am on Tue, 27-Oct-2026 (2.11 MVB)
 - **Coursework due (COMS30097)** : 1 pm on Thursday, 03-Dec-2026
 - **Winter exam  (COMS30081)**:  hh xm on Day, dd-Mon-2026 (To be confirmed)
 
