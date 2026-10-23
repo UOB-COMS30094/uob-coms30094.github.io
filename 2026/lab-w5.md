@@ -15,19 +15,10 @@ This lab covers tabular Q-learning, joint action learning with agent modelling (
 
 Run these commands from the unzipped lab folder.
 
-macOS:
-
 ```bash
-bash setup_scripts/setup-mac.sh
+bash setup_scripts/setup.sh
 source .venv/bin/activate
 jupyter notebook lab5-initial.ipynb
-```
-
-Windows (PowerShell):
-
-```powershell
-powershell -ExecutionPolicy Bypass -File setup_scripts\setup-windows.ps1
-.venv\Scripts\jupyter notebook lab5-initial.ipynb
 ```
 
 ## Lab Files
