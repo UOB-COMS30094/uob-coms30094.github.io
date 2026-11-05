@@ -58,6 +58,6 @@ Do not modify `games.py`, `viz.py` or `tests.py`.
 
 ## Lab Solutions
 
-[Lab 4 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w4/lab4_solution.ipynb)
+[Lab 4 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w4/lab4_solutions.ipynb)
 
 
