@@ -54,3 +54,9 @@ write your solution only inside the indicated region.
 After each exercise, run the cell below it. Unfinished exercises raise `NotImplementedError` and stop the cells that depend on them.
 
 Do not modify the files in `Agents/` or `posggym/`.
+
+## Lab Solutions
+
+[Lab 5 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w5/lab5-solution.ipynb)
+
+
