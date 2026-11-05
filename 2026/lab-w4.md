@@ -56,3 +56,8 @@ After each task, run the check cell below it, e.g. `tests.check_task1_nash(is_pu
 
 Do not modify `games.py`, `viz.py` or `tests.py`.
 
+## Lab Solutions
+
+[Lab 4 Solution](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w4/lab4_solution.ipynb)
+
+
