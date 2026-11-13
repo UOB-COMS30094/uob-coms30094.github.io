@@ -14,6 +14,12 @@ From the project folder, with `uv` installed, set up the environment and optiona
 ./setup_uv.sh --learning
 source .venv/bin/activate
 ```
+If you do not have `uv` installed, but do have python version 3.12, you can setup the venv using:
+
+```
+bash setup.sh
+source .venv/bin/activate
+```
 
 Run the four examples:
 
