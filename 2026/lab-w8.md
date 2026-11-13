@@ -22,7 +22,7 @@ You will build LLM-based agents, explore how their values and social norms influ
 
 **[⬇ Download the Lab 8 starter files](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/labs/lab-w8/lab8-initial.zip)**
 
-Start with **[lab8.ipynb](lab8.ipynb)**.
+Start with **lab8.ipynb**.
 
 The lab downloads a small Qwen model through Ollama, demonstrates text generation, then turns that same model into an agent in GovSim's original fishing environment. Inference uses only your own computer.
 
