@@ -5,7 +5,7 @@ title: Home
 
 [Home](index) \| [Blackboard Page](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/outline) \| [Blackboard Forum](https://www.ole.bris.ac.uk/ultra/courses/_269234_1/engagement) \| [Unit Catalogue](https://www.bristol.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=26%2F27&unitCode=COMS30094)
 <br/>
-Labs: [W1](lab-w1) | [W2](lab-w2) | [W3](lab-w3) | [W4](lab-w4) | [W5](lab-w5) | [W7](lab-w7) | [W8]()
+Labs: [W1](lab-w1) | [W2](lab-w2) | [W3](lab-w3) | [W4](lab-w4) | [W5](lab-w5) | [W7](lab-w7) | [W8](lab-w8)
 
 # Welcome to Intelligent Agents (COMS30094)
 
@@ -39,7 +39,7 @@ The unit provides both the classical foundations of multiagent systems and an in
 | 5 (w/c 19-Oct-2026) | Learning and Adaptation | MZ | [Reinforcement learning](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec9-handout.pdf) | [Multiagent reinforcement learning](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec10-handout.pdf) | [Learning agents](lab-w5) | 
 | 6 (w/c 26-Oct-2026) | Consolidation Week |  | | [**Exam Prep**](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/week5-exam-prep.pdf) | [**Mock Exam**](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/exams/coms30094-MOCK.pdf) [(Answers)](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/exams/coms30094-MOCK-Answers.pdf) | 
 | 7 (w/c 02-Nov-2026) | Preferences, Social Choice, and Resource Allocation | NA MZ | [Preference modelling and social choice](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec11-handout.pdf) | [Allocation, auctions, and mechanism design](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec12-handout.pdf) | [Voting and auction mechanisms](lab-w7) | 
-| 8 (w/c 09-Nov-2026) | Generative and Agentic AI, and Human-Agent Interaction | NA MZ | [Generative and Agentic AI](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec13-handout.pdf) | [Human-agent Interaction, Evaluation, and Governance](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec14-handout.pdf) | Multi-LLM Agents | 
+| 8 (w/c 09-Nov-2026) | Generative and Agentic AI, and Human-Agent Interaction | NA MZ | [Generative and Agentic AI](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec13-handout.pdf) | [Human-agent Interaction, Evaluation, and Governance](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS30094_2026_TB-1/lectures/lec14-handout.pdf) | [Multi-LLM Agents](lab-w8) | 
 | 9 (w/c 16-Nov-2026) | Coursework |  |  |  |  | 
 | 10 (w/c 23-Nov-2026) | Coursework |  |  |  |  | 
 | 11 (w/c 30-Nov-2026) | Coursework |  |  |  |  |
