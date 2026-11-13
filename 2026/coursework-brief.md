@@ -21,7 +21,7 @@ bash setup.sh
 source .venv/bin/activate
 ```
 
-Run the four examples:
+Run the three examples:
 
 ```sh
 python -m examples.demo --agent random
