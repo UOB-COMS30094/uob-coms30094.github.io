@@ -20,7 +20,6 @@ Run the four examples:
 ```sh
 python -m examples.demo --agent random
 python -m examples.demo --agent rulebased
-python -m examples.demo --agent coordinator
 python -m examples.demo --agent qlearning --train-episodes 10
 ```
 
